@@ -67,7 +67,7 @@ export default function App() {
         </div>
       </div>
 
-      {/* Stats */}
+      {/* Stats
       <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 12, marginBottom: 24 }}>
         {[
           { label: "Total", value: employees.length, color: "#2563eb" },
@@ -80,7 +80,7 @@ export default function App() {
             <div style={{ fontSize: 13, color: "#6b7280", marginTop: 4 }}>{s.label} Today</div>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Add Button */}
       <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 16 }}>
