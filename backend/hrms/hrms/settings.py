@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+import re
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -158,3 +159,8 @@ CORS_ALLOWED_ORIGINS = os.environ.get(
     'CORS_ALLOWED_ORIGINS',
     "http://localhost:5173",
 ).split(',')
+
+# 2. Pattern matches (Handles any Vercel deployment URL)
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://hrms-lite-.*\.vercel\.app$",
+]
