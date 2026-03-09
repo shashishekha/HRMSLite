@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8000/api";
+const API_BASE = "https://hrmslite-ydbk.onrender.com/api";
 
 export const fetcher = async (url, opts = {}) => {
   const res = await fetch(`${API_BASE}${url}`, {
