@@ -4,4 +4,3 @@ buildCommand = ""
 
 [deploy]
 
-startCommand = "python manage.py migrate --noinput && gunicorn hrms.wsgi:application --bind 0.0.0.0:$PORT"
