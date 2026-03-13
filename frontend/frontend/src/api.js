@@ -1,4 +1,4 @@
-const API_BASE = "https://hrmslite-ydbk.onrender.com/api";
+const API_BASE = "https://hrmslite-production-bfb5.up.railway.app";
 
 export const fetcher = async (url, opts = {}) => {
   const res = await fetch(`${API_BASE}${url}`, {
