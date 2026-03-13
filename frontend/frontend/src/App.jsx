@@ -49,7 +49,9 @@ export default function App() {
   };
 
   const handleSummary = async (emp) => {
-    try { setSummary({ emp, data: await getSummary(emp.id) }); }
+    try { 
+    const res = await getSummary(emp.id);
+    setSummary({ emp, data: res.data }); }
     catch { showToast("Could not load summary", true); }
   };
 
