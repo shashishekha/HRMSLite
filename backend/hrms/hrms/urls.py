@@ -15,10 +15,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.http import JsonResponse
 from django.urls import path,include
-
+import os
+#Debugging regarding issue on the production
+def debug_db(request):
+    return JsonResponse({
+        'DATABASE_URL': os.environ.get('DATABASE_URL', 'NOT SET'),
+    })
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
+    path('debug-db/', debug_db),
 ]
