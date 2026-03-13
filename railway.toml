@@ -3,4 +3,4 @@ dockerfilePath = "backend.Dockerfile"
 buildCommand = ""
 
 [deploy]
-startCommand = ""
+startCommand = "python manage.py migrate --noinput && gunicorn hrms.wsgi"
