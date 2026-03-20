@@ -8,7 +8,7 @@ Manage Employees: Add and view employee profiles with unique IDs and department 
 
 Attendance Tracking: Record daily attendance status (Present/Absent/Late) linked to specific employees.
 
-The app is fully deployed with the backend hosted on Render (using a PostgreSQL database) and the frontend hosted on Vercel.
+The app is fully deployed with the backend hosted on Railway (using a PostgreSQL database) and the frontend hosted on Vercel.
 
 🛠 Tech Stack
 Backend
