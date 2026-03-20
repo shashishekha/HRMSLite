@@ -127,7 +127,7 @@ export default function App() {
         </table>
       )}
 
-      {/* Attendance Table */}
+      {/* This is the attendance table */}
       {!loading && tab === "attendance" && (
         <table style={tableStyle}>
           <thead>
